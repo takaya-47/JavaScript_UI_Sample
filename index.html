@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntersectionObserverAPIと非同期処理を用いたUI</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <form action="https://api.openweathermap.org/data/2.5/forecast" method="get">
+    <h3>３時間ごとの天気予報</h3>
+    <label for="cnt">いくつ取得しますか</label>
+    <input type="search" name="cnt" id="cnt"  placeholder="例) 6" size="10">
+    <input type="hidden" name="lat" value="36.3272526">
+    <input type="hidden" name="lon" value="138.4259718">
+    <input type="hidden" name="units" value="metric">
+    <input type="hidden" name="lang" value="ja">
+    <input type="hidden" name="appid" value="5423c830d8a0abd979f0f9e94c0572fa">
+    <button>天気予報を取得する</button>
+  </form>
+  <main>
+    <!-- ここに天気予報のデータを非同期でJSで作成する -->
+  </main>
+  <script src="./main.js"></script>
+</body>
+</html>

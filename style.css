@@ -1,0 +1,16 @@
+body {
+  background-color: #D4F4DD;
+  margin: 0;
+}
+body form {
+  padding: 10px;
+}
+body form h3 {
+  margin-bottom: 10px;
+}
+body form label,
+body form input,
+body form button {
+  display: block;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */
