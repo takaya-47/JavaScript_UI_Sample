@@ -2,15 +2,36 @@ body {
   background-color: #D4F4DD;
   margin: 0;
 }
+body h3 {
+  margin: 0 0 10px 0;
+}
 body form {
   padding: 10px;
-}
-body form h3 {
-  margin-bottom: 10px;
 }
 body form label,
 body form input,
 body form button {
   display: block;
   margin-bottom: 10px;
+}
+body main {
+  padding: 10px;
+}
+body main .result {
+  background-color: #17BEBB;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 1s;
+}
+body main .result.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+body main .result > div {
+  height: 40px;
+  line-height: 40px;
+}
+body main .result > div p {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

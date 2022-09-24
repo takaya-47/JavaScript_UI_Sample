@@ -8,16 +8,37 @@ $color-5: #4B1D3F;
 body {
   background-color: $color-3;
   margin: 0;
+  h3 {
+    margin: 0 0 10px 0;
+  }
   form {
     padding: 10px;
-    h3 {
-      margin-bottom: 10px;
-    }
     label,
     input,
     button {
       display: block;
       margin-bottom: 10px;
+    }
+  }
+  main {
+    padding: 10px;
+    .result {
+      background-color: $color-2;
+      margin-bottom: 10px;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: all 1s;
+    }
+    .result.show {
+      opacity: 1.0;
+      transform: translateY(0);
+    }
+    .result > div {
+      height: 40px;
+      line-height: 40px;
+      p {
+        margin: 0;
+      }
     }
   }
 }
